@@ -188,7 +188,7 @@ footer a:hover {
 }
 
 .pantalla-inicio h1 {
-    font-size: clamp(2rem, 6vw, 4rem);  /* mínimo 2rem, máximo 4rem, escala con ancho */
+    font-size: clamp(2rem, 6vw, 4rem);
     margin-bottom: 1rem;
     letter-spacing: 3px;
     position: relative;
@@ -307,6 +307,76 @@ footer a:hover {
     border: 3px solid crimson;
     border-radius: 10px;
     box-shadow: 0 0 20px crimson;
+}
+
+/* Contacto */
+
+.contenedor-contacto {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contacto {
+    background-color: black;
+    color: white;
+    border: 2px solid crimson;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%; 
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(220, 20, 60, 0.4);
+    line-height: 1.6;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.contacto-img {
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: 80%;
+    max-width: 100%;
+}
+
+.contacto h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.contacto a {
+    display: block;
+    font-size: 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 8px crimson, 0 0 16px crimson;
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.contacto a:hover {
+    color: crimson;
+    text-shadow: 0 0 8px crimson, 0 0 16px crimson;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.contacto-texto {
+    color:white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 1.5rem;
+}
+
+.contacto-texto p {
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 600px) {
