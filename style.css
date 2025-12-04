@@ -5,7 +5,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100hv;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #E5DCC5;
@@ -391,7 +391,6 @@ footer a:hover {
     color: #e5e5e5;
     line-height: 1.6;
     box-shadow: 0 0 20px rgba(0,0,0,0.6);
-    min-height: calc(100vh - 200px);
 }
 
 /* === TÍTULO === */
