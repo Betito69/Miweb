@@ -1,20 +1,23 @@
-fetch("../data/casos.json")
-    .then(r => r.json)
-    .then(data => {
-        const contenedor = document.getElementById("contenedor");
-        const asesinos = data.items. filter(item => item.tipo === "asesino"); 
+document.addEventListener("DOMContentLoaded", () => {
 
-       asesinos.forEach(asesino => {
-      contenedor.innerHTML += `
-        <article class="asesino">
-            <a href="${asesino.link}">
-                <h2>${asesino.titulo}</h2>
-                <p>${asesino.descripcion}</p>
-                <img src="${asesino.imagen}" alt="${asesino.titulo}">
-                <p>¡Conoce su historia aquí!</p>
-            </a>
-        </article>
-      `;
-    });
-})
-.catch(err => console.error("Error cargando JSON:", err)); 
+    fetch("../data/casos.json")
+        .then(res => res.json())
+        .then(data => {
+            const contenedor = document.getElementById("contenedor");
+            contenedor.innerHTML = "";
+
+            const casos = data.items; 
+
+            data.forEach(caso => {
+                const card = `
+                    <div class="card">
+                        <img src="${caso.imagen}" alt="${caso.nombre}">
+                        <h2>${caso.nombre}</h2>
+                        <p>${caso.descripcion}</p>
+                    </div>
+                `;
+                contenedor.innerHTML += card;
+            });
+        })
+        .catch(error => console.log("Error al cargar JSON:", error));
+});
