@@ -17,6 +17,21 @@
             "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
 
             "link": "../asesinos/asesino.html?id=ed-gein"
+        },
+        {
+            "id": "ted-bundy",
+            "tipo": "asesino",
+            "titulo": "Ted Bundy",
+            "imagen": "../img/Ted Bundy.jpeg",
+
+            "descripcion": "El asesino carismático.",
+
+            "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
+            "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
+            "modus_operandi": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
+            "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
+
+            "link": "../asesinos/asesino.html?id=ted-bundy"
         }
     ]
 }
