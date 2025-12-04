@@ -1,0 +1,14 @@
+{
+    "items": [
+        {
+            "id": "ed-gein",
+            "tipo": "asesino",
+            "titulo": "Ed Gein",
+            "descripcion": "El temido 'Monstruo de Plainfield'.",
+            "imagen": "../img/Ed Gein.jpeg",
+            "link": "../asesinos/ed-gein.html"
+        }
+    ]
+
+
+}
