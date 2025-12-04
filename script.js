@@ -8,12 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const casos = data.items; 
 
-            data.forEach(caso => {
+            casos.forEach(caso => {
                 const card = `
                     <div class="card">
-                        <img src="${caso.imagen}" alt="${caso.nombre}">
-                        <h2>${caso.nombre}</h2>
+                        <img src="${caso.imagen}" alt="${caso.titulo}">
+                        <h2>${caso.titulo}</h2>
                         <p>${caso.descripcion}</p>
+                        <a href="${caso.link}">Ver mas</a>
                     </div>
                 `;
                 contenedor.innerHTML += card;
