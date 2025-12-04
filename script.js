@@ -10,12 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             casos.forEach(caso => {
                 const card = `
-                    <div class="asesino">
+                    <a class="asesino" href="${caso.link}">
                         <img src="${caso.imagen}" alt="${caso.titulo}">
                         <h2>${caso.titulo}</h2>
                         <p>${caso.descripcion}</p>
-                        <a href="${caso.link}">Ver mas</a>
-                    </div>
+                    </a>
                 `;
                 contenedor.innerHTML += card;
             });
