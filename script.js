@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             casos.forEach(caso => {
                 const card = `
-                    <div class="card">
+                    <div class="asesino">
                         <img src="${caso.imagen}" alt="${caso.titulo}">
                         <h2>${caso.titulo}</h2>
                         <p>${caso.descripcion}</p>
