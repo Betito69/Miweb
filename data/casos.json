@@ -6,7 +6,7 @@
             "titulo": "Ed Gein",
             "imagen": "../img/Ed Gein.jpeg",
 
-            "descripcion": "El temido 'Monstruo de Plainfield'.",
+            "descripcion": "El temido “Monstruo de Plainfield”. Descubre las atrocidades que cometió y cómo la locura lo llevó a crear su propio museo del horror.",
 
             "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
 
@@ -22,7 +22,7 @@
             "id": "ted-bundy",
             "tipo": "asesino",
             "titulo": "Ted Bundy",
-            "imagen": "../img/Ted Bundy.jpeg",
+            "imagen": "../img/Ted-Bundy.jpeg",
 
             "descripcion": "El asesino carismático.",
 
@@ -32,6 +32,51 @@
             "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
 
             "link": "../asesinos/asesino.html?id=ted-bundy"
+        },
+        {
+            "id": "ed-kemper",
+            "tipo": "asesino",
+            "titulo": "Ed Kemper",
+            "imagen": "../img/Ed Kemper.jpeg",
+
+            "descripcion": "El asesino de colegialas",
+
+            "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
+            "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
+            "modus_operandi": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
+            "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
+
+            "link": "../asesinos/asesino.html?id=ed-kemper"
+        },
+        {
+            "id": "jhon-wayne-gacy",
+            "tipo": "asesino",
+            "titulo": "Jhon Wayne Gacy",
+            "imagen": "../img/John Wayne Gacy.jpeg",
+
+            "descripcion": "El asesino carismático.",
+
+            "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
+            "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
+            "modus_operandi": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
+            "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
+
+            "link": "../asesinos/asesino.html?id=jhon-wayne-gacy"
+        },
+        {
+            "id": "aileen-wournos",
+            "tipo": "asesino",
+            "titulo": "Aileen Wournos",
+            "imagen": "../img/Aileen Wuornos.jpeg",
+
+            "descripcion": "El asesino carismático.",
+
+            "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
+            "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
+            "modus_operandi": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
+            "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
+
+            "link": "../asesinos/asesino.html?id=aileen-wournos"
         }
     ]
 }

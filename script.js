@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
             casos.forEach(caso => {
                 const card = `
                     <a class="asesino" href="${caso.link}">
+                        <h3>${caso.titulo}</h3>
+                        <p class="descrip">${caso.descripcion}</p>
                         <div class="img-box">
                             <img src="${caso.imagen}" alt="${caso.titulo}">
                         </div>
-                        <h2>${caso.titulo}</h2>
-                        <p>${caso.descripcion}</p>
                     </a>
                 `;
                 contenedor.innerHTML += card;
