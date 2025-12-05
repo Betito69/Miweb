@@ -9,11 +9,8 @@
             "descripcion": "El temido “Monstruo de Plainfield”. Descubre las atrocidades que cometió y cómo la locura lo llevó a crear su propio museo del horror.",
 
             "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
-
             "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
-
             "modus_operandi": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
-
             "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
 
             "link": "../asesinos/asesino.html?id=ed-gein"
@@ -24,9 +21,9 @@
             "titulo": "Ted Bundy",
             "imagen": "../img/Ted-Bundy.jpeg",
 
-            "descripcion": "El asesino carismático.",
+            "descripcion": "Carismático, inteligente y brutal. Ted Bundy escondía detrás de su sonrisa el rostro más perturbador del encanto humano.",
 
-            "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
+            "biografia": "nserar biografia aqui",
             "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
             "modus_operandi": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
             "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
@@ -39,9 +36,9 @@
             "titulo": "Ed Kemper",
             "imagen": "../img/Ed Kemper.jpeg",
 
-            "descripcion": "El asesino de colegialas",
+            "descripcion": "“El Asesino de Colegialas”. Con una mente brillante y un odio retorcido, Kemper convirtió su inteligencia en su arma más cruel.",
 
-            "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
+            "biografia": "inserar biografia aqui",
             "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
             "modus_operandi": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
             "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
@@ -49,12 +46,27 @@
             "link": "../asesinos/asesino.html?id=ed-kemper"
         },
         {
+            "id": "jeffrey-dahmer",
+            "tipo": "asesino",
+            "titulo": "Jeffrey Dahmer",
+            "imagen": "../img/Jeffrey Dahmer.jpeg",
+
+            "descripcion": "“El Caníbal de Milwaukee”. Cometió crímenes tan inhumanos que aún cuesta creerlos. Adéntrate en la mente del hombre que hizo del horror su rutina.",
+
+            "biografia": "“El Asesino de Colegialas”. Con una mente brillante y un odio retorcido, Kemper convirtió su inteligencia en su arma más cruel.",
+            "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
+            "modus_operandi": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
+            "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
+
+            "link": "../asesinos/asesino.html?id=jeffrey-dahmer"
+        },
+        {
             "id": "jhon-wayne-gacy",
             "tipo": "asesino",
             "titulo": "Jhon Wayne Gacy",
             "imagen": "../img/John Wayne Gacy.jpeg",
 
-            "descripcion": "El asesino carismático.",
+            "descripcion": "“Pogo el payaso“ o “El Payaso Asesino”. Entre risas y disfraces, ocultaba los secretos más oscuros bajo su propia casa. Nadie imaginó el infierno que escondía.",
 
             "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
             "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
@@ -69,7 +81,7 @@
             "titulo": "Aileen Wournos",
             "imagen": "../img/Aileen Wuornos.jpeg",
 
-            "descripcion": "El asesino carismático.",
+            "descripcion": "La mujer que desafió al infierno. Entre abusos, traición y sangre, su historia revela el límite entre víctima y verdugo.",
 
             "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
             "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
@@ -77,6 +89,51 @@
             "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
 
             "link": "../asesinos/asesino.html?id=aileen-wournos"
+        },
+        {
+            "id": "richard-ramirez",
+            "tipo": "asesino",
+            "titulo": "Richard Ramirez",
+            "imagen": "../img/Richard Ramirez.jpeg",
+
+            "descripcion": "“El Acechador Nocturno”. De día un desconocido, de noche una sombra letal. Su culto al mal dejó una marca indeleble en California.",
+
+            "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
+            "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
+            "modus_operandi": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
+            "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
+
+            "link": "../asesinos/asesino.html?id=richard-ramirez"
+        },
+        {
+            "id": "david-berkowitz",
+            "tipo": "asesino",
+            "titulo": "David Berkowitz",
+            "imagen": "../img/David Berkowitz.jpeg",
+
+            "descripcion": "“El Hijo de Sam”. Decía que un demonio le ordenaba matar. Pero su verdadero monstruo habitaba mucho más cerca de su mente.",
+
+            "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
+            "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
+            "modus_operandi": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
+            "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
+
+            "link": "../asesinos/asesino.html?id=david-berkowitz"
+        },
+        {
+            "id": "dennis-rader",
+            "tipo": "asesino",
+            "titulo": "Dennis Rader",
+            "imagen": "../img/Dennis Rader.jpeg",
+
+            "descripcion": "“BTK“ Atar, Torturar, Matar. Un hombre ejemplar ante todos, un cazador meticuloso en la oscuridad. Su ego fue su peor enemigo… y su perdición.",
+
+            "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
+            "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
+            "modus_operandi": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
+            "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
+
+            "link": "../asesinos/asesino.html?id=dennis-rader"
         }
     ]
 }
