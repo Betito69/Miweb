@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("descripcion").textContent = asesino.descripcion || "";
             document.getElementById("biografia").textContent = asesino.biografia || "";
             document.getElementById("victimas").textContent = asesino.victimas || "";
-            document.getElementById("modus_operandi").textContent = asesino.modus_operandi || "";
+            document.getElementById("perfil_psicologico").textContent = asesino.perfil_psicologico || "";
             document.getElementById("datos_interes").textContent = asesino.datos_interes || "";
         })
         .catch(err => console.log("Error al cargar datos:", err));
