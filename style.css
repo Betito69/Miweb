@@ -74,6 +74,10 @@ header h1 {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .asesino h2 {
@@ -124,13 +128,14 @@ section article:hover {
 */
 footer {
     background-color: black;
-    color: white;
+    color: #bbb;
     text-align: center;
-    padding: 0.5rem 2rem;
+    padding: 20px;
     border-top: 2px solid crimson;
-    margin-top: auto;
+    margin-top: 50px;
     width: 100%;
     box-sizing: border-box;
+    font-size: 0.9rem;
 }
 
 footer section {
@@ -145,10 +150,9 @@ footer p {
 }
 
 footer a {
-    transition: all 0.3 ease;
     color: white; 
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.3 ease;
     display: inline-block;
 }
 
@@ -434,14 +438,6 @@ footer a:hover {
     box-shadow: 0 0 20px crimson;
 }
 
-.asesino {
-    text-decoration: none;
-    color: inherit;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-}
-
 .asesino h3 {
     font-family: 'Times New Roman', serif; 
     font-size: 2.5rem;            
@@ -462,7 +458,7 @@ footer a:hover {
     margin-top: 35px;
     font-size: 1.8rem;
     letter-spacing: 1px;
-    color: #f5f5f5;
+    color: hsl(62, 70%, 70%);
     border-left: 4px solid crimson;
     padding-left: 10px;
 }
@@ -474,19 +470,154 @@ footer a:hover {
     text-align: justify;
 }
 
-/* === FOOTER === */
-footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px;
-    color: #bbb;
-    font-size: 0.9rem;
+/* === FICHAS DE INFORMACION DE VICTIMAS === */
+
+.tarjeta-victima {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;
+    margin: 20px 0;
+    
+    background-color: #0a0a0a;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    box-shadow: 0 0 12px crimson;
+
+    transform: none;
+    transition: none;
+    cursor: default;
 }
+
+.tarjeta-victima:hover {
+    transform: none;
+    box-shadow: 0 0 12px crimson;
+    cursor: default;
+}
+
+/* Imagen de la victima */
+.imagen-victima {
+    display: block;
+    flex: 0 0 180px;
+
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+
+    border: 2px solid crimson;
+    border-radius: 8px;
+    box-shadow: 0 0 10px crimson;
+    box-sizing: border-box;
+}
+
+/* Columna con la información */
+.contenido-victima {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+}
+
+.contenido-victima h3 {
+    margin: 0 0 12px;
+    color: hsl(62, 70%, 70%);
+    font-size: 1.4rem;
+}
+
+.contenido-victima p {
+    margin: 8px 0;
+    color: #e5e5e5;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+
+/* ===== CRONOLOGÍA DEL EXPEDIENTE ===== */
+#cronologia {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 10px 0 10px 30px;
+    box-sizing: border-box;
+}
+
+/* Línea vertical de la cronología */
+#cronologia::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 8px;
+    width: 2px;
+    background-color: crimson;
+    box-shadow: 0 0 8px crimson;
+}
+
+.evento-cronologia {
+    position: relative;
+    width: 100%;
+    margin: 0 0 22px;
+    padding: 20px 24px;
+    background-color: #0a0a0a;
+    border: 1px solid crimson;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(220, 20, 60, 0.2);
+    box-sizing: border-box;
+    text-align: left;
+     transform: none;
+    transition: none;
+    cursor: default;
+}
+
+.evento-cronologia::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: -29px;
+    width: 12px;
+    height: 12px;
+    background-color: crimson;
+    border: 2px solid #0a0a0a;
+    border-radius: 50%;
+    box-shadow: 0 0 10px crimson;
+}
+
+.evento-cronologia h3 {
+    margin: 0 0 10px;
+    color: crimson;
+    text-align: left;
+    font-size: 22px;
+    border-bottom: 1px solid #3a111b;
+    padding-bottom: 10px;
+}
+
+.evento-cronologia p {
+    margin: 8px 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.evento-cronologia p:first-of-type {
+    color: #d5d5d5;
+}
+
+.evento-cronologia:hover {
+    box-shadow: 0 0 8px rgba(220, 20, 60, 0.2);
+    transform: none;
+    cursor: default;
+}
+
+
 
 
 
 @media (max-width: 600px) {
     .biografia {
+        width: 95%;
         padding: 1rem;
         line-height: 1.4;
     }
@@ -494,6 +625,7 @@ footer {
     .asesino-img {
         width: 80%;
         max-width: 200px;
+        margin: 1rem auto;
     }
 
     .btn-entrar {
@@ -512,17 +644,6 @@ footer {
     .menu li {
         margin: 0 1rem;
         flex: 0 0 auto;
-    }
-
-    .biografia {
-        width: 95%;
-        padding: 1rem;
-    }
-
-    .asesino-img {
-        width: 80%;
-        max-width: 200px;
-        margin: 1rem auto;
     }
 
     .biografia h2 {
