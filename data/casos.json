@@ -8,7 +8,7 @@
 
             "descripcion": "El temido “Monstruo de Plainfield”. Descubre las atrocidades que cometió y cómo la locura lo llevó a crear su propio museo del horror.",
 
-            "biografia": "Edward Theodore Gein nació en 1906 en Wisconsin. Creció en un ambiente familiar marcado por una madre profundamente religiosa y dominante...",
+            "biografia": "Edward Theodore Gein, conocido como “El carnicero de Plainfield”, nació el 27 de agosto de 1906 en La Crosse, Wisconsin, y creció en Plainfield. Fue el segundo de dos hijos de George Philip Gein y Augusta Whilhelmine Lehrke, ambos de origen alemán. Tenia un único hermano llamado Henry.\nInfancia:\nEdward “Ed” Gein creció bajo la estricta influencia de su madre, Augusta, una mujer profundamente religiosa que veía el mundo como corrupto y peligroso. Desde pequeño, Ed fue bombardeado con ideas sobre la inmoralidad, la promiscuidad de las mujeres y la condena divina, escuchando cada tarde versículos del Antiguo Testamento y del Apocalipsis sobre muerte, asesinato y retribución. La figura de su madre se convirtió en el centro de su vida, idolatrándola hasta desarrollar una obsesión.",
             "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
             "perfil_psicologico": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
             "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
@@ -23,7 +23,7 @@
 
             "descripcion": "Carismático, inteligente y brutal. Ted Bundy escondía detrás de su sonrisa el rostro más perturbador del encanto humano.",
 
-            "biografia": "nserar biografia aqui",
+            "biografia": "insertar biografia aqui",
             "victimas": "Se le confirmaron dos asesinatos, pero también se le asocia con múltiples desapariciones en el área.",
             "perfil_psicologico": "Exhumaba cuerpos del cementerio y los usaba para crear objetos macabros. También actuaba como asesino ocasional.",
             "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
@@ -134,6 +134,21 @@
             "datos_interes": "Inspiró películas como 'Psicosis', 'La Masacre de Texas' y 'El Silencio de los Inocentes'.",
 
             "link": "../asesinos/asesino.html?id=dennis-rader"
+        },
+        {
+            "id": "lizzie-borden",
+            "tipo": "asesino",
+            "titulo": "Lizzie Borden",
+            "imagen": "../img/Lizzie_Borden.jpeg",
+
+            "descripcion": "La asesina del hacha",
+
+            "biografia": "",
+            "victimas": "",
+            "perfil_psicologico": "",
+            "datos_interes": "",
+
+            "link": "../asesinos/asesino.html?id=lizzie-borden"
         }
     ]
 }
