@@ -8,9 +8,9 @@ html, body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #E5DCC5;
-    color: white;
-    font-family: 'Times New Roman', serif;
+    background:#100E13;
+    color: #E9E0D3;
+    font-family: 'Inter', sans-serif;
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
@@ -26,11 +26,11 @@ main {
    ======================== 
 */
 header {
-    background-color: #111;
-    color: white;
+    background-color: #100E13;
+    color:  #E9E0D3;
     text-align: center;
     padding: 1rem;
-    border-bottom: 2px solid crimson;
+    border-bottom: 2px solid #80618C;
 }
 
 header h1 {
@@ -68,8 +68,8 @@ header h1 {
    ======================== 
 */
 .asesino {
-    background-color: black;
-    color: white;
+    background-color:#211923;
+    color: #E9E0D3;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -91,7 +91,7 @@ header h1 {
 
 .asesino:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px crimson;
+    box-shadow: 0 0 15px #80618C;
 }
 
 .asesino a {
@@ -105,12 +105,12 @@ header h1 {
    ======================== 
 */
 section article {
-    background-color: rgb(0, 0, 0);
+    background-color:  #211923;
     margin: 1rem 0;
     border-radius: 0.5rem;
     padding: 0.25rem 0;
     cursor: pointer;
-    color: white;
+    color:#E9E0D3;
     text-align: center;
 }
 
@@ -127,11 +127,11 @@ section article:hover {
    ======================== 
 */
 footer {
-    background-color: black;
-    color: #bbb;
+    background-color:#100E13;
+    color:#B9AFBD;
     text-align: center;
     padding: 20px;
-    border-top: 2px solid crimson;
+    border-top: 2px solid #80618C;
     margin-top: 50px;
     width: 100%;
     box-sizing: border-box;
@@ -150,15 +150,15 @@ footer p {
 }
 
 footer a {
-    color: white; 
+    color: #E9E0D3; 
     text-decoration: none;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
     display: inline-block;
 }
 
 footer a:hover {
-    color: crimson;
-    text-shadow: 0 0 8px crimson, 0 0 16px crimson;
+    color: #80618C;
+    text-shadow: 0 0 8px#80618C, 0 0 16px #80618C;
     transform: scale(1.1);
 }
 
@@ -168,8 +168,8 @@ footer a:hover {
 .pantalla-inicio {
     position: relative;          
     min-height: 100vh;           
-    background-color: black; /* Negro a beige */
-    color: white;
+    background-color:#100E13;
+    color:  #E9E0D3;
     display: flex;            
     justify-content: center; 
     align-items: center;      
@@ -204,7 +204,7 @@ footer a:hover {
     display: block;
     height: 5px;
     width: 100%;
-    background-color: crimson;
+    background-color: #80618C;
     margin-top: 0.5rem;
     border-radius: 2px;
 }
@@ -212,14 +212,14 @@ footer a:hover {
 .pantalla-inicio p {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: #B9AFBD;
 }
 
 .btn-entrar {
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: crimson;
-    color: white;
+    background-color:  #80618C;
+    color: #100E13;
     border-radius: 8px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -228,7 +228,7 @@ footer a:hover {
 }
 
 .btn-entrar:hover {
-    background-color: rgb(255, 50, 80);
+    background-color:  #55405F;
     transform: scale(1.05);
 }
 
@@ -238,9 +238,9 @@ footer a:hover {
 .menu {
     position: sticky;        
     top: 0;                  
-    background-color: #111; 
+    background-color: #100E13; 
     z-index: 999; 
-    border-bottom: 2px solid crimson; 
+    border-bottom: 2px solid #80618C; 
     width: 100%;
     display: flex;
     justify-content: center;        
@@ -261,7 +261,7 @@ footer a:hover {
 
 .menu a {
     text-decoration: none;
-    color: white;
+    color: #E9E0D3;
     font-weight: bold;
     padding: 1rem 0;
     display: block;
@@ -269,7 +269,7 @@ footer a:hover {
 }
 
 .menu ul li a:hover {
-    color: crimson;         
+    color: #80618C;         
 }
 
 /* Biografias individuales */
@@ -283,14 +283,14 @@ footer a:hover {
 }
 
 .biografia {
-    background-color: black;
-    color: white;
-    border: 2px solid crimson;
+    background-color: #211923;
+    color:#E9E0D3;
+    border: 2px solid #55405F;
     border-radius: 12px;
     padding: 2rem;
     width: 100%; 
     max-width: 600px;
-    box-shadow: 0 0 20px rgba(220, 20, 60, 0.4);
+    box-shadow:0 0 20px rgba(128, 97, 140, 0.25);
     line-height: 1.6;
     text-align: justify;
     box-sizing: border-box;
@@ -298,7 +298,7 @@ footer a:hover {
 
 .biografia h2 {
     text-align: center;
-    color: white;
+    color:  #E9E0D3;
     margin-bottom: 1.5rem;
     font-size: 2rem;
 }
@@ -308,9 +308,9 @@ footer a:hover {
     margin: 2rem auto;
     width: 80%;
     max-width: 250px;
-    border: 3px solid crimson;
+    border:3px solid #80618C;
     border-radius: 10px;
-    box-shadow: 0 0 20px crimson;
+    box-shadow:0 0 20px rgba(128, 97, 140, 0.35);
 }
 
 /* Contacto */
@@ -324,14 +324,14 @@ footer a:hover {
 }
 
 .contacto {
-    background-color: black;
-    color: white;
-    border: 2px solid crimson;
+    background-color: #211923;
+    color: #E9E0D3;
+    border: 2px solid#55405F;
     border-radius: 12px;
     padding: 2rem;
     width: 100%; 
     max-width: 600px;
-    box-shadow: 0 0 20px rgba(220, 20, 60, 0.4);
+    box-shadow: 0 0 20px rgba(128, 97, 140, 0.25);
     line-height: 1.6;
     box-sizing: border-box;
     display: flex;
@@ -349,7 +349,7 @@ footer a:hover {
 
 .contacto h2 {
     text-align: center;
-    color: white;
+    color:#E9E0D3;
     margin-bottom: 1rem;
     font-size: 2rem;
 }
@@ -359,20 +359,20 @@ footer a:hover {
     font-size: 1.3rem;
     text-align: center;
     text-decoration: none;
-    text-shadow: 0 0 8px crimson, 0 0 16px crimson;
-    color: crimson;
+    text-shadow: 0 0 8px #80618C, 0 0 16px #80618C;
+    color: #80618C;
     transition: all 0.3s ease;
 }
 
 .contacto a:hover {
-    color: crimson;
-    text-shadow: 0 0 8px crimson, 0 0 16px crimson;
+    color:  #80618C;
+    text-shadow: 0 0 8px  #80618C, 0 0 16px  #80618C;
     transform: scale(1.1);
     text-decoration: underline;
 }
 
 .contacto-texto {
-    color:white;
+    color: #E9E0D3;
     font-size: 1.1rem;
     line-height: 1.6;
     text-align: justify;
@@ -389,10 +389,10 @@ footer a:hover {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    background: rgb(0, 0, 0);
+    background: #211923;
     backdrop-filter: blur(5px);
     border-radius: 12px;
-    color: #e5e5e5;
+    color: #E9E0D3;
     line-height: 1.6;
     box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
@@ -433,9 +433,9 @@ footer a:hover {
     max-height: 250px;     
     width: auto;
     height: auto;      
-    border: 3px solid crimson;
+    border: 3px solid#80618C;
     border-radius: 10px;
-    box-shadow: 0 0 20px crimson;
+    box-shadow: 0 0 20px rgba(128, 97, 140, 0.35);
 }
 
 .asesino h3 {
@@ -450,7 +450,7 @@ footer a:hover {
     font-size: 18px;
     margin: 0.25rem 1rem 1rem 1rem;
     text-align: center;
-    color: #e5e5e5; 
+    color: #B9AFBD; 
 }
 
 /* === ENCABEZADOS === */
@@ -458,8 +458,8 @@ footer a:hover {
     margin-top: 35px;
     font-size: 1.8rem;
     letter-spacing: 1px;
-    color: hsl(62, 70%, 70%);
-    border-left: 4px solid crimson;
+    color: #E9E0D3;
+    border-left: 4px solid #80618C;
     padding-left: 10px;
 }
 
@@ -482,10 +482,10 @@ footer a:hover {
     padding: 18px;
     margin: 20px 0;
     
-    background-color: #0a0a0a;
-    border: 1px solid crimson;
+    background-color:#211923;
+    border: 1px solid #55405F;
     border-radius: 10px;
-    box-shadow: 0 0 12px crimson;
+    box-shadow: 0 0 12px rgba(128, 97, 140, 0.2);
 
     transform: none;
     transition: none;
@@ -494,7 +494,7 @@ footer a:hover {
 
 .tarjeta-victima:hover {
     transform: none;
-    box-shadow: 0 0 12px crimson;
+    box-shadow: 0 0 12px rgba(128, 97, 140, 0.2);
     cursor: default;
 }
 
@@ -507,9 +507,9 @@ footer a:hover {
     height: 220px;
     object-fit: cover;
 
-    border: 2px solid crimson;
+    border: 2px solid #80618C;
     border-radius: 8px;
-    box-shadow: 0 0 10px crimson;
+    box-shadow: 0 0 10px rgba(128, 97, 140, 0.35);
     box-sizing: border-box;
 }
 
@@ -522,13 +522,13 @@ footer a:hover {
 
 .contenido-victima h3 {
     margin: 0 0 12px;
-    color: hsl(62, 70%, 70%);
+    color: #E9E0D3; 
     font-size: 1.4rem;
 }
 
 .contenido-victima p {
     margin: 8px 0;
-    color: #e5e5e5;
+    color:#B9AFBD;
     line-height: 1.6;
     overflow-wrap: anywhere;
 }
@@ -553,8 +553,8 @@ footer a:hover {
     bottom: 10px;
     left: 8px;
     width: 2px;
-    background-color: crimson;
-    box-shadow: 0 0 8px crimson;
+    background-color: #80618C;
+    box-shadow: 0 0 8px rgba(128, 97, 140, 0.5);
 }
 
 .evento-cronologia {
@@ -562,10 +562,10 @@ footer a:hover {
     width: 100%;
     margin: 0 0 22px;
     padding: 20px 24px;
-    background-color: #0a0a0a;
-    border: 1px solid crimson;
+    background-color: #211923;
+    border: 1px solid #55405F;
     border-radius: 8px;
-    box-shadow: 0 0 8px rgba(220, 20, 60, 0.2);
+    box-shadow: 0 0 8px  rgba(128, 97, 140, 0.2);
     box-sizing: border-box;
     text-align: left;
      transform: none;
@@ -580,18 +580,18 @@ footer a:hover {
     left: -29px;
     width: 12px;
     height: 12px;
-    background-color: crimson;
-    border: 2px solid #0a0a0a;
+    background-color: #80618C;
+    border: 2px solid #211923;
     border-radius: 50%;
-    box-shadow: 0 0 10px crimson;
+    box-shadow: 0 0 10pxrgba(128, 97, 140, 0.5);
 }
 
 .evento-cronologia h3 {
     margin: 0 0 10px;
-    color: crimson;
+    color: #80618C;
     text-align: left;
     font-size: 22px;
-    border-bottom: 1px solid #3a111b;
+    border-bottom: 1px solid #55405F;
     padding-bottom: 10px;
 }
 
@@ -602,18 +602,19 @@ footer a:hover {
 }
 
 .evento-cronologia p:first-of-type {
-    color: #d5d5d5;
+    color:#B9AFBD;
 }
 
 .evento-cronologia:hover {
-    box-shadow: 0 0 8px rgba(220, 20, 60, 0.2);
+    box-shadow: 0 0 8px rgba(128, 97, 140, 0.2);
     transform: none;
     cursor: default;
 }
 
 
-
-
+.asesino h2, .asesino h3, .asesino .descrip {
+    font-family: 'Inter', sans-serif;
+}
 
 @media (max-width: 600px) {
     .biografia {
@@ -638,7 +639,7 @@ footer a:hover {
         display: flex;
         justify-content: flex-start;
         overflow-x: auto;
-        padding: 0 0 auto;
+        padding: 0;
     }
 
     .menu li {
