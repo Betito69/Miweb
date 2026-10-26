@@ -121,158 +121,158 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     
-function mostrarCronologia(contenedor, cronologia) {
-    contenedor.replaceChildren();
+    function mostrarCronologia(contenedor, cronologia) {
+        contenedor.replaceChildren();
 
-    if (!Array.isArray(cronologia) || cronologia.length === 0) {
-        return;
-    }
-
-    cronologia.forEach(evento => {
-        const tarjeta = document.createElement("article");
-        tarjeta.classList.add("evento-cronologia");
-
-        const titulo = document.createElement("h3");
-        titulo.textContent = evento.titulo || "Acontecimiento";
-        tarjeta.appendChild(titulo);
-
-        if (evento.fecha) {
-            const fecha = document.createElement("p");
-            fecha.textContent = evento.fecha;
-            tarjeta.appendChild(fecha);
+        if (!Array.isArray(cronologia) || cronologia.length === 0) {
+            return;
         }
 
-        if (evento.descripcion) {
-            const descripcion = document.createElement("p");
-            descripcion.textContent = evento.descripcion;
-            tarjeta.appendChild(descripcion);
-        }
+        cronologia.forEach(evento => {
+            const tarjeta = document.createElement("article");
+            tarjeta.classList.add("evento-cronologia");
 
-        contenedor.appendChild(tarjeta);
-    });
-}
+            const titulo = document.createElement("h3");
+            titulo.textContent = evento.titulo || "Acontecimiento";
+            tarjeta.appendChild(titulo);
 
-
-function mostrarPerfilPsicologico(contenedor, perfil) {
-    contenedor.replaceChildren();
-
-    if (!perfil) return;
-
-    if (typeof perfil === "string") {
-        contenedor.textContent = perfil;
-        return;
-    }
-
-    if (perfil.resumen) {
-        const resumen = document.createElement("p");
-        resumen.textContent = perfil.resumen;
-        contenedor.appendChild(resumen);
-    }
-
-    if (Array.isArray(perfil.subapartados)) {
-        perfil.subapartados.forEach(apartado => {
-            const bloque = document.createElement("section");
-
-            if (apartado.titulo) {
-                const titulo = document.createElement("h3");
-                titulo.textContent = apartado.titulo;
-                bloque.appendChild(titulo);
+            if (evento.fecha) {
+                const fecha = document.createElement("p");
+                fecha.textContent = evento.fecha;
+                tarjeta.appendChild(fecha);
             }
 
-            const parrafos = Array.isArray(apartado.contenido)
-                ? apartado.contenido
-                : [apartado.contenido];
+            if (evento.descripcion) {
+                const descripcion = document.createElement("p");
+                descripcion.textContent = evento.descripcion;
+                tarjeta.appendChild(descripcion);
+            }
 
-            parrafos.forEach(texto => {
-                if (typeof texto === "string" && texto.trim()) {
-                    const parrafo = document.createElement("p");
-                    parrafo.textContent = texto;
-                    bloque.appendChild(parrafo);
+            contenedor.appendChild(tarjeta);
+        });
+    }
+
+
+    function mostrarPerfilPsicologico(contenedor, perfil) {
+        contenedor.replaceChildren();
+
+        if (!perfil) return;
+
+        if (typeof perfil === "string") {
+            contenedor.textContent = perfil;
+            return;
+        }
+
+        if (perfil.resumen) {
+            const resumen = document.createElement("p");
+            resumen.textContent = perfil.resumen;
+            contenedor.appendChild(resumen);
+        }
+
+        if (Array.isArray(perfil.subapartados)) {
+            perfil.subapartados.forEach(apartado => {
+                const bloque = document.createElement("section");
+
+                if (apartado.titulo) {
+                    const titulo = document.createElement("h3");
+                    titulo.textContent = apartado.titulo;
+                    bloque.appendChild(titulo);
+                }
+
+                const parrafos = Array.isArray(apartado.contenido)
+                    ? apartado.contenido
+                    : [apartado.contenido];
+
+                parrafos.forEach(texto => {
+                    if (typeof texto === "string" && texto.trim()) {
+                        const parrafo = document.createElement("p");
+                        parrafo.textContent = texto;
+                        bloque.appendChild(parrafo);
+                    }
+                });
+
+                if (bloque.textContent.trim()) {
+                    contenedor.appendChild(bloque);
+                }
+            });
+        }
+    }
+
+    function mostrarDatosInteres(contenedor, datos) {
+        contenedor.replaceChildren();
+
+        if (!datos) return;
+
+        if (typeof datos === "string") {
+            if (datos.trim()) {
+                const parrafo = document.createElement("p");
+                parrafo.textContent = datos;
+                contenedor.appendChild(parrafo);
+            }
+            return;
+        }
+
+        if (Array.isArray(datos) && datos.length > 0) {
+            const lista = document.createElement("ul");
+
+            datos.forEach(dato => {
+                if (typeof dato === "string" && dato.trim()) {
+                    const elemento = document.createElement("li");
+                    elemento.textContent = dato;
+                    lista.appendChild(elemento);
                 }
             });
 
-            if (bloque.textContent.trim()) {
-                contenedor.appendChild(bloque);
+            if (lista.children.length > 0) {
+                contenedor.appendChild(lista);
             }
-        });
-    }
-}
-
-function mostrarDatosInteres(contenedor, datos) {
-    contenedor.replaceChildren();
-
-    if (!datos) return;
-
-    if (typeof datos === "string") {
-        if (datos.trim()) {
-            const parrafo = document.createElement("p");
-            parrafo.textContent = datos;
-            contenedor.appendChild(parrafo);
         }
-        return;
     }
 
-    if (Array.isArray(datos) && datos.length > 0) {
+    function mostrarFuentes(contenedor, fuentes) {
+        contenedor.replaceChildren();
+
+        if (!Array.isArray(fuentes) || fuentes.length === 0) {
+            return;
+        }
+
         const lista = document.createElement("ul");
+        lista.classList.add("lista-fuentes");
 
-        datos.forEach(dato => {
-            if (typeof dato === "string" && dato.trim()) {
-                const elemento = document.createElement("li");
-                elemento.textContent = dato;
-                lista.appendChild(elemento);
+        fuentes.forEach(fuente => {
+            const elemento = document.createElement("li");
+            elemento.classList.add("fuente");
+
+            if (fuente.url) {
+                const enlace = document.createElement("a");
+                enlace.href = fuente.url;
+                enlace.textContent = fuente.titulo || fuente.url;
+                enlace.target = "_blank";
+                enlace.rel = "noopener noreferrer";
+                elemento.appendChild(enlace);
+            } else {
+                const titulo = document.createElement("span");
+                titulo.textContent = fuente.titulo || "Fuente sin título";
+                elemento.appendChild(titulo);
             }
+
+            if (fuente.autor) {
+                const autor = document.createElement("p");
+                autor.textContent = "Autor: " + fuente.autor;
+                elemento.appendChild(autor);
+            }
+
+            if (fuente.fecha) {
+                const fecha = document.createElement("p");
+                fecha.textContent = "Publicación: " + fuente.fecha;
+                elemento.appendChild(fecha);
+            }
+
+            lista.appendChild(elemento);
         });
 
-        if (lista.children.length > 0) {
-            contenedor.appendChild(lista);
-        }
+        contenedor.appendChild(lista);
     }
-}
-
-function mostrarFuentes(contenedor, fuentes) {
-    contenedor.replaceChildren();
-
-    if (!Array.isArray(fuentes) || fuentes.length === 0) {
-        return;
-    }
-
-    const lista = document.createElement("ul");
-    lista.classList.add("lista-fuentes");
-
-    fuentes.forEach(fuente => {
-        const elemento = document.createElement("li");
-        elemento.classList.add("fuente");
-
-        if (fuente.url) {
-            const enlace = document.createElement("a");
-            enlace.href = fuente.url;
-            enlace.textContent = fuente.titulo || fuente.url;
-            enlace.target = "_blank";
-            enlace.rel = "noopener noreferrer";
-            elemento.appendChild(enlace);
-        } else {
-            const titulo = document.createElement("span");
-            titulo.textContent = fuente.titulo || "Fuente sin título";
-            elemento.appendChild(titulo);
-        }
-
-        if (fuente.autor) {
-            const autor = document.createElement("p");
-            autor.textContent = "Autor: " + fuente.autor;
-            elemento.appendChild(autor);
-        }
-
-        if (fuente.fecha) {
-            const fecha = document.createElement("p");
-            fecha.textContent = "Publicación: " + fuente.fecha;
-            elemento.appendChild(fecha);
-        }
-
-        lista.appendChild(elemento);
-    });
-
-    contenedor.appendChild(lista);
-}
 
 
     const params = new URLSearchParams(window.location.search);
@@ -287,8 +287,15 @@ function mostrarFuentes(contenedor, fuentes) {
                 document.getElementById("titulo-asesino").textContent = "Caso no encontrado";
                 return;
             }
-
+            
             document.getElementById("titulo-asesino").textContent = asesino.titulo;
+            const numeroExpediente = data.items.findIndex(
+                caso => caso.titulo === asesino.titulo
+            ) + 1;
+
+            document.getElementById("numero-expediente").textContent =
+                `ARCHIVO CRIMINAL · EXPEDIENTE ${String(numeroExpediente).padStart(3, "0")}`;
+
             document.getElementById("imagen").src = asesino.imagen;
 
             document.getElementById("descripcion").textContent = asesino.descripcion || "";
@@ -301,8 +308,7 @@ function mostrarFuentes(contenedor, fuentes) {
             
             mostrarPerfilPsicologico(document.getElementById("perfil_psicologico"), asesino.perfil_psicologico);
 
-            mostrarDatosInteres(document.getElementById("datos_interes"), asesino.datos_interes);
-            
+            mostrarDatosInteres(document.getElementById("datos_interes"), asesino.datos_interes)
             mostrarFuentes(document.getElementById("fuentes"), asesino.fuentes); 
 
             actualizarVisibilidadSeccion("seccion-descripcion", "descripcion");
